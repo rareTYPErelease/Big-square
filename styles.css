@@ -1,0 +1,159 @@
+    /*log in part*/
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+    
+    section 
+    {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .signin
+    {
+      position: absolute;
+      width: 400px;
+      background: #011f03b4;  
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      border-radius: 4px;
+      box-shadow: 0 15px 35px rgba(0,0,0,9);
+    }
+    section .signin .content 
+    {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+    section .signin .content h2 
+    {
+      font-size: 2em;
+      color: #f86510;
+      text-transform: uppercase;
+    }
+    section .signin .content .form 
+    {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    section .signin .content .form .inputBox
+    {
+      position: relative;
+      width: 100%;
+    }
+    section .signin .content .form .inputBox input 
+    {
+      position: relative;
+      width: 100%;
+      background: #141414;
+      border: none;
+      outline: none;
+      padding: 25px 10px 7.5px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1em;
+    }
+    section .signin .content .form .inputBox i 
+    {
+      position: absolute;
+      left: 0;
+      padding: 15px 10px;
+      font-style: normal;
+      color: #ffffff;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+    .signin .content .form .inputBox input:focus ~ i,
+    .signin .content .form .inputBox input:valid ~ i
+    {
+      transform: translateY(-7.5px);
+      font-size: 0.8em;
+      color: #fff;
+    }
+    .signin .content .form .links 
+    {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signin .content .form .links a 
+    {
+      color: #fff;
+      text-decoration: none;
+    }
+    .signin .content .form .links a:nth-child(1), .signin .content .form .links a:nth-child(2)
+    {
+        color: #bb9d06;
+      font-weight: 600;
+    }
+    .signin .content .form .links a:hover {
+      color: #830718; /* Change the text color on hover */
+      transform: scale(1.1); /* Add a slight scale effect on hover */
+      transition: 0.3s; /* Add a smooth transition for the effect */
+      text-decoration: underline;
+  }
+  
+    .signin .content .form .inputBox input[type="submit"]
+    {
+      padding: 10px;
+      background:#f8d1107a;
+      color: #000;
+      font-weight: 600;
+      font-size: 1.35em;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover
+    {
+      background-color: #520404; /* Change the background color on hover */
+      color: #ce0d0d; /* Change the text color on hover */
+      box-shadow: 0 0 10px rgba(10, 70, 2, 0.5); /* Add a shadow effect on hover */
+      transform: scale(1.05); /* Add a slight scale effect on hover */
+      transition: 0.3s; /* Add a smooth transition for the effect */
+    }
+    @media (max-width: 950px)
+    {
+      section span 
+      {
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
+      }
+    }
+    @media (max-width: 600px)
+    {
+      section span 
+      {
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+      }
+    }
+
+    .bg {
+      background-image: url('');
+      background-size: cover; /* Adjust the size property as needed */
+      background-position: center; /* Adjust the position property as needed */
+      background-repeat: no-repeat;
+  }
+  
